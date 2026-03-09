@@ -1,0 +1,7 @@
+
+fact_salesRow ID, Order ID, Product ID, Customer ID, Postal Code, Sales, Quantity, Discount, Profit
+dim_order Order ID, Ship Date, Ship Mode
+dim_customer Customer ID, Customer Name, Segment
+dim_location Country, City, State, Postal Code, Region
+dim_product Product ID, Category, Sub-Category, Product Name
+dim_dateOrder Date, Day, Month, Quarter, Year

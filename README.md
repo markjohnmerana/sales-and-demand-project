@@ -95,8 +95,6 @@ Excel / Python (EDA) – Data cleaning and exploration
 
 Power BI – Interactive dashboard visualization
 
-Python - Data validation and machine learning
-
 📈 Dashboard Outcome
 
 The final dashboard allows stakeholders to:
