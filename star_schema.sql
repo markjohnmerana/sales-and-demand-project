@@ -21,7 +21,7 @@ CREATE TABLE dim_product(
     product_id VARCHAR(50) PRIMARY KEY,
     category VARCHAR(20),
     sub_category VARCHAR(20),
-    product_name VARCHAR(100)
+    product_name VARCHAR(255)
 );
 
 CREATE TABLE dim_customer(
