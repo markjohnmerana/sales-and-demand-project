@@ -112,6 +112,7 @@ Make strategic business decisions based on data
 Developer:
 
 Mark John Merana
+
 Junior Data Analyst | SQL • Power BI • Python
 
 View my works at https://engr-insight.netlify.app/
