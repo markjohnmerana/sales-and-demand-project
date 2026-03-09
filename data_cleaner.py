@@ -16,15 +16,11 @@ df["Ship Date"] = pd.to_datetime(df["Ship Date"], dayfirst=True, errors="coerce"
 df = df.dropna(subset=["Order Date"])
 
 # ── Null handling  ──────────────────────────────────────────
-#### Only drop rows where CRITICAL columns are null
-#### Sales, Quantity, Profit are required for analysis
 
 critical_columns = ["Order ID", "Product ID", "Customer ID", "Sales", "Quantity", "Profit"]
 df = df.dropna(subset=critical_columns)
 
 # ── Data duplicate handling ─────────────────────────────────────
-#### Only remove rows where EVERY column is identical (true duplicates)
-#### DO NOT subset by Order ID alone - one order can have many products
 df = df.drop_duplicates()
 
 # ── Checking the output ──────────────────────────────────────────
