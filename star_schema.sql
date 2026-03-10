@@ -1,5 +1,5 @@
 
-/*
+USE sales_dw;
 
 CREATE TABLE dim_order(
     order_id VARCHAR(50) PRIMARY KEY,
@@ -55,32 +55,8 @@ CREATE TABLE fact_sales(
     FOREIGN KEY (product_id)  REFERENCES dim_product(product_id),
     FOREIGN KEY (customer_id) REFERENCES dim_customer(customer_id),
     FOREIGN KEY (postal_code) REFERENCES dim_location(postal_code)
-); */
-
-/*USE sales_dw;
-
-SELECT COUNT(*) AS total_rows FROM fact_sales;
-SELECT COUNT(*) AS total_customers FROM dim_customer;
-SELECT COUNT(*) AS total_products FROM dim_product;
-SELECT COUNT(*) AS total_orders FROM dim_order;
-SELECT COUNT(*) AS total_locations FROM dim_location;
-SELECT COUNT(*) AS total_dates FROM dim_date;
-
-USE sales_dw;
-
-DELETE FROM fact_sales;
-DELETE FROM dim_order;
-DELETE FROM dim_date;
-DELETE FROM dim_customer;
-DELETE FROM dim_product;
-DELETE FROM dim_location;*/
+);
 
 
---COUNT(*)Counts all rows — 9,994
---COUNT(DISTINCT order_id)Counts unique orders — 5,009
-/*SELECT 
-	SUM(sales) AS revenue,
-	COUNT(DISTINCT order_id) AS total_orders
-FROM fact_sales;*/
 
 
