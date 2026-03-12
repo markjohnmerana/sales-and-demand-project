@@ -1,6 +1,5 @@
 USE sales_dw;
 
---
 SELECT
     l.region,
     c.segment,
