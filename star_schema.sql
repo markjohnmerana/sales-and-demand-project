@@ -45,7 +45,7 @@ CREATE TABLE fact_sales(
     product_id VARCHAR(50),
     customer_id VARCHAR(50),
     postal_code INT,
-    sales DECIMAL(10,2),
+    sales DECIMAL(10,3),
     quantity INT,
     discount DECIMAL(10,2),
     profit DECIMAL(10,2),
@@ -59,4 +59,4 @@ CREATE TABLE fact_sales(
 
 
 
-
+/**/
