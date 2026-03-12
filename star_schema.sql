@@ -48,7 +48,7 @@ CREATE TABLE fact_sales(
     sales DECIMAL(10,3),
     quantity INT,
     discount DECIMAL(10,2),
-    profit DECIMAL(10,2),
+   --2 profit DECIMAL(10,2),
 
     FOREIGN KEY (order_id)    REFERENCES dim_order(order_id),
     FOREIGN KEY (order_date)  REFERENCES dim_date(order_date),
